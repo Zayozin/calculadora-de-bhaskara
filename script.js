@@ -17,15 +17,18 @@ function calcular() {
     }
     else if (delta == 0) {
         var x1 = (-b + delta**0.5) / (2 * a);
+        var rx1 = x1.toFixed(2)
         res.innerHTML = `O valor de delta é: <strong>${delta}</strong>.`;
-        res2.innerHTML = `O resultado é: <strong>${x1}</strong>.`;
+        res2.innerHTML = `O resultado é: <strong>${rx1}</strong>.`;
         
     }
     else if (delta > 0) {
         var x1 = (-b + delta**0.5) / (2 * a);
         var x2 = (-b - delta**0.5) / (2 * a);
+        var rx1 = x1.toFixed(2)
+        var rx2 = x2.toFixed(2)
         res.innerHTML = `O valor de delta é: <strong>${delta}</strong>.`;
-        res2.innerHTML = `Os resultados são: <strong>${x1}</strong> e <strong>${x2}</strong>.`;
+        res2.innerHTML = `Os resultados são: <strong>${rx1}</strong> e <strong>${rx2}</strong>.`;
     }
 }
 
